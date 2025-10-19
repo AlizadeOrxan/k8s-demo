@@ -1,0 +1,15 @@
+# service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: orkhan-spring-service
+spec:
+  # Podları 'app: orkhan-spring-app' etiketi ilə seçir
+  selector:
+    app: orkhan-spring-app
+  ports:
+    - protocol: TCP
+      port: 8080       # Servisin portu (Klaster daxili port)
+      targetPort: 8080 # Servisdən Konteynerə yönləndirmə portu
+  type: LoadBalancer     # Lokal K8s-də xaricdən girişə icazə verir
+

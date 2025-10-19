@@ -1,0 +1,22 @@
+# deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orkhan-spring-deployment
+spec:
+  # Tətbiqin iki nüsxəsi işləməlidir
+  replicas: 2
+  selector:
+    matchLabels:
+      app: orkhan-spring-app
+  template:
+    metadata:
+      labels:
+        app: orkhan-spring-app
+    spec:
+      containers:
+        - name: spring-app-container
+          image: orkhan/k8s-demo:latest #yaratdığımız docker imicin adı
+          imagePullPolicy: IfNotPresent # Lokal imici istifadə etmək
+          ports:
+            - containerPort: 8080 # Konteynerin daxili portu
