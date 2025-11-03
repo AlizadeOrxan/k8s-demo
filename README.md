@@ -1,6 +1,6 @@
-# Sıfırdan: Mənim Spring Boot Tətbiqimi Lokal Kubernetes-ə (K8s) Yerləşdirmək
 
-Bu bələdçidə, `k8s-demo` adlı Spring Boot tətbiqimi necə Docker konteynerinə yerləşdirib, daha sonra Docker Desktop istifadə edərək lokal Kubernetes klasterində işə saldığımı izah edirəm.
+
+#`k8s-demo` adlı Spring Boot tətbiqimi necə Docker konteynerinə yerləşdirib, daha sonra Docker Desktop istifadə edərək lokal Kubernetes klasterində işə saldığımı izah edirəm.
 
 ## Mərhələ 0: İlkin Şərtlər və Hazırlıq
 
